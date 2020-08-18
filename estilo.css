@@ -1,0 +1,237 @@
+body {
+    font: 15px;
+    font-style: arial, Helvetica, sans-serif;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+/*estilos globales*/
+
+.contenedor {
+    width: 80;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.boton1 {
+    height: 38px;
+    background-color: #e8491d;
+    border: 0;
+    padding-left: 20;
+    padding-right: 20;
+    color: #f4f4f4
+}
+
+
+/*encabezado*/
+
+header {
+    background-color: #24282b;
+    color: #f4f4f4;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: 7px solid #1293d4;
+}
+
+header a {
+    color: #ffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+header li {
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #marca {
+    float: left;
+}
+
+header #marca h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .resaltado,
+header .actual a {
+    color: #1293d4;
+    font-weight: bold;
+}
+
+header a:hover {
+    color: #ccc;
+    font-weight: bold;
+}
+
+#cabecera {
+    min-height: 300px;
+    background: url('../img/colores.jpg') no-repeat 0 -300px;
+    text-align: center;
+    color: white;
+}
+
+#cabecera h1 {
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#cabecera p {
+    font-size: 25px;
+}
+
+
+/*fotmulario*/
+
+#suscribete {
+    padding: 10px;
+    color: #ffff;
+    background: #24282b;
+}
+
+#suscribete h1 {
+    float: left;
+}
+
+#suscribete form {
+    float: right;
+    margin-top: 15px;
+}
+
+#suscribete input[type='email'] {
+    padding: 5px;
+    height: 25px;
+    width: 250px;
+    color: rgb(0, 0, 0);
+    background: #ffffff;
+}
+
+
+/*cajas*/
+
+#cajas {
+    margin-top: 20px;
+}
+
+#cajas .caja {
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+
+#cajas .caja img {
+    width: 100px;
+}
+
+
+/*lateral*/
+
+aside#lateral {
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+.oscuro {
+    padding: 25px;
+    background-color: #35424a;
+    color: #ffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    margin-right: 00px;
+}
+
+
+/*articulos*/
+
+article #main-col {
+    float: left;
+    width: 60%;
+}
+
+article {
+    margin-left: 25px;
+}
+
+
+/*pie de pagina*/
+
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    color: #ffff;
+    background-color: #1293d4;
+    text-align: center;
+}
+
+
+/*contacto*/
+
+input,
+textarea {
+    margin-right: 20px;
+    margin-left: 20;
+    width: 100%;
+    height: 35px;
+    border: 1px solid gray;
+    margin-bottom: 5px;
+}
+
+textarea {
+    height: 120px;
+}
+
+input[type="submit"] {
+    background-color: #e8491d;
+    color: #ffff;
+}
+
+
+/*responsive*/
+
+@media(max-width: 768px) {
+    header #marca,
+    header nav,
+    header nav li,
+    #suscribete h1,
+    #suscribete form,
+    #cajas .caja,
+    article#main-col,
+    aside#lateral {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    header {
+        padding-bottom: 20px;
+    }
+    #suscribete h1 {
+        margin-top: 40px;
+    }
+    #susbribete button {
+        display: block;
+        width: 100%;
+    }
+    #suscribete form input[type="email"] {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    input,
+    textarea {
+        width: 98%;
+    }
+}
